@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/ChocoMod.jpeg" />
+    <title>ChocoMood</title>
+
+    <meta
+      name="description"
+      content="Choco Mood offers handmade brownies, birthday cakes, cookies and custom desserts in Marrakech. Fresh, fudgy and made with love. Order now!"
+    />
+
+    <meta
+      name="keywords"
+      content="Choco Mood, brownies Marrakech, homemade cakes, birthday cake Marrakech, cookies, desserts, chocolate brownies, حلويات منزلية مراكش"
+    />
+
+    <meta name="author" content="Choco Mood" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="geo.region" content="MA-MAR" />
+    <meta name="geo.placename" content="Marrakech" />
+    <meta name="language" content="en, fr, ar" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Choco Mood",
+        "url": "https://YOURDOMAIN.COM",
+        "image": "https://YOURDOMAIN.COM/images/logo.png",
+        "description": "Homemade brownies and cakes in Marrakech.",
+        "servesCuisine": "Desserts",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marrakech",
+          "addressCountry": "MA"
+        },
+        "sameAs": [
+          "https://www.instagram.com/YOUR_USERNAME/",
+          "https://www.tiktok.com/@YOUR_USERNAME"
+        ]
+      }
+    </script>
+
+    <!-- swiper link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- cdn icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header section start here  -->
+    <header class="header">
+      <div class="logoContent">
+        <a href="#about" class="logo"
+          ><img src="images/Untitled (700 x 280 px).png" alt="ChocoMood Logo"
+        /></a>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home" data-i18n="nav_home">home</a>
+        <a href="#product" data-i18n="nav_product">product</a>
+        <a href="#blogs" data-i18n="nav_blogs">blogs</a>
+        <a href="#review" data-i18n="nav_review">review</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">contact</a>
+      </nav>
+
+      <div class="header-icons">
+        <div class="icon">
+          <a
+            href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-trigger"
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+          >
+            <img class="flag-img" src="images/flags/ma.svg" alt="AR" />
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="lang-menu" role="listbox">
+            <button
+              class="lang-option"
+              type="button"
+              role="option"
+              data-lang="ar"
+            >
+              <img class="flag-img" src="images/download1MA.svg" alt="AR" />
+              <!-- <span>AR</span> -->
+            </button>
+
+            <button
+              class="lang-option"
+              type="button"
+              role="option"
+              data-lang="fr"
+            >
+              <img class="flag-img" src="images/download2Fr.svg" alt="FR" />
+              <!-- <span>FR</span> -->
+            </button>
+
+            <button
+              class="lang-option"
+              type="button"
+              role="option"
+              data-lang="en"
+            >
+              <img class="flag-img" src="images/download3En.svg" alt="EN" />
+              <!-- <span>EN</span> -->
+            </button>
+          </div>
+        </div>
+        <!-- drop down -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+      <video autoplay muted loop>
+        <source
+          src="images/Untitled video - Made with Clipchamp.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="homeContent">
+        <h2 data-i18n="hero_title">Delicious Cake for Everyone</h2>
+        <p data-i18n="hero_desc">Lorem ipsum...</p>
+        <div class="home-btn">
+          <a href="#product"><button data-i18n="hero_btn">see more</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- home section end here  -->
+    <!-- About section start here  -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-header">
+          <h2 data-i18n="about_title">حلويات منزلية عصرية تُحضَّر بعناية</h2>
+          <p class="about-intro" data-i18n="about_intro">
+            ChocoMood هو مشروع حلويات منزلية عصرية نُحضّرها بحبّ وعناية،
+            باستخدام مكوّنات مختارة، مع خدمة التوصيل حتى باب منزلك.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 data-i18n="about_card1_title">ماذا نقدّم؟</h3>
+            <p data-i18n="about_card1_text">
+              نوفّر تشكيلة متنوعة من الحلويات المنزلية تشمل حلويات أعياد
+              الميلاد، الكوكيز، البراونيز، وحلويات بالشوكولاتة والأوريو، بوصفات
+              عصرية تناسب جميع الأذواق.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 data-i18n="about_card2_title">حلوى على ذوقك</h3>
+            <p data-i18n="about_card2_text">
+              يمكنك اختيار النكهات والمكوّنات حسب رغبتك، أو طلب حلوى مخصّصة
+              لمناسبة معيّنة. نحرص على تنفيذ كل طلب بدقّة واهتمام.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 data-i18n="about_card3_title">حلويات صحية</h3>
+            <p data-i18n="about_card3_text">
+              نقدّم أيضاً حلويات صحية بوصفات أخف، تجمع بين الطعم اللذيذ ونمط
+              حياة متوازن.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section end here  -->
+
+    <!-- Qs section start here  -->
+    <section class="faq" id="faq">
+      <div class="heading">
+        <h2 data-i18n="faq_title">أسئلة شائعة</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q1">من هي ChocoMood</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">
+              ChocoMood هو مشروع حلويات منزلية عصرية، نُحضّر الحلويات بعناية
+              باستخدام مكوّنات مختارة، مع توفير خدمة التوصيل حتى باب المنزل.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q2">ما نوع الحلويات التي تقدّمونها؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">
+              نقدّم تشكيلة متنوعة تشمل حلويات أعياد الميلاد، الكوكيز، البراونيز،
+              وحلويات بالشوكولاتة والأوريو، بالإضافة إلى وصفات عصرية ومبتكرة.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q3">هل يمكن تخصيص الحلوى حسب الطلب؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">
+              نعم، يمكن اختيار النكهات والمكوّنات حسب رغبتك، كما يمكن طلب حلوى
+              مخصّصة لمناسبة معيّنة.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q4">هل توفّرون حلويات صحية؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a4">
+              نعم، نقدّم أيضاً حلويات صحية بوصفات أخف، مع الحفاظ على الطعم
+              اللذيذ.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q5">كيف يمكن الطلب؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a5">
+              يمكنك الطلب عبر وسائل التواصل أو عبر الموقع: حدّد نوع الحلوى،
+              الكمية، والمكوّنات المطلوبة، وسنؤكد لك وقت التحضير والتوصيل.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span data-i18n="faq_q6">هل يوجد توصيل؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a6">
+              نعم، نوفر خدمة توصيل سريعة وآمنة حتى باب منزلك حسب المنطقة المتفق
+              عليها.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Qs section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+      <div class="heading">
+        <h2 data-i18n="products_title">Our Exclusive Products</h2>
+      </div>
+      <!-- slider 1 -->
+      <div class="swiper product-row product-row-1" dir="ltr">
+        <div class="swiper-wrapper">
+          <!-- {{!--Birthday brownie --}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake1.jpeg" alt="Birthday brownie" />
+            </div>
+            <div class="product-content">
+              <h3>Birthday brownie 🤎 🍫</h3>
+              <p>
+                Birthday Brownie – Choco Mood 🎉 Un brownie fondant et gourmand,
+                spécialement préparé pour les anniversaires ! ❤️ Recouvert d’une
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Box de brownie classic --}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img
+                src="images/productcake22.png"
+                alt="Box de brownie classic "
+              />
+            </div>
+            <div class="product-content">
+              <h3>Box de brownie classic</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Browkie --}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/productcake3.jpeg" alt="Browkie" />
+            </div>
+            <div class="product-content">
+              <h3>Browkie</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Brownie caramel--}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/productcake4.jpeg" alt="Brownie caramel" />
+            </div>
+            <div class="product-content">
+              <h3>Brownie caramel</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Brownie lotus--}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/productcake5jpeg.jpeg" alt="Brownie lotus" />
+            </div>
+            <div class="product-content">
+              <h3>Brownie lotus</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Brownie oreo--}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/productcake6.png" alt="Brownie oreo" />
+            </div>
+            <div class="product-content">
+              <h3>Brownie oreo</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- {{!--Brownie classic--}} -->
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake2.png" alt="Brownie classic" />
+            </div>
+            <div class="product-content">
+              <h3>Brownie classic</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                adipisci reiciendis assumenda.
+              </p>
+              <div class="orderNow">
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                >
+                  <button data-i18n="order_now">Order Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination product-pagination-1"></div>
+      </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+      <div class="swiper blogs-row" dir="ltr">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake1.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Birthday Brownie –</h3>
+              <p>
+                Birthday Brownie – Choco Mood 🎉 Un brownie fondant et gourmand,
+                spécialement préparé pour les anniversaires ! ❤️ Recouvert d’une
+                fine couche de ganache au chocolat, décoré avec des paillettes
+                colorées et un message personnalisé, il allie douceur, intensité
+                et fête dans chaque bouchée. Idéal pour surprendre un proche ou
+                célébrer une journée spéciale avec une touche chocolatée
+                irrésistible
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                ab ullam reiciendis sint eaque at.
+              </p>
+              <a href="#blogs" class="btn">learn more</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/blog-img2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Caramel Bourbon Vanilla Cupcakes</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi dolorum voluptatum corporis accusamus aperiam fugiat
+                tempora blanditiis labore dolor aliquid maxime nobis laborum sed
+                soluta voluptatibus aspernatur natus, dicta quisquam.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                ab ullam reiciendis sint eaque at.
+              </p>
+              <a href="#blogs" class="btn">learn more</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/blog-img2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Caramel Bourbon Vanilla Cupcakes</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi dolorum voluptatum corporis accusamus aperiam fugiat
+                tempora blanditiis labore dolor aliquid maxime nobis laborum sed
+                soluta voluptatibus aspernatur natus, dicta quisquam.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                ab ullam reiciendis sint eaque at.
+              </p>
+              <a href="#blogs" class="btn">learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- blogs section ends here  -->
+
+    <!-- newsletter section start here  -->
+
+    <section class="newsletter">
+      <form action="">
+        <h3 data-i18n="newsletter_title">subscribe for latest update</h3>
+        <input
+          data-i18n="newsletter_placeholder"
+          type="email"
+          name="email"
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input
+          data-i18n="newsletter_btn"
+          type="button"
+          value="subscribe"
+          class="box2"
+        />
+      </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+      <div class="heading">
+        <h2 data-i18n="client_reviews">Client Reviews</h2>
+      </div>
+
+      <div class="swiper product-row product-row-2" dir="ltr">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="stars">★★★★★</div>
+            <div class="client-review">
+              <p>
+                Amazing quality and very professional service. Everything was
+                smooth and perfectly organized.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="clientDetailed">
+                <h3>Alex Morgan</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">★★★★★</div>
+            <div class="client-review">
+              <p>
+                coucou,ils sont manifiques super bien presentes et delicieux je
+                les recommande a 100%
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="clientDetailed">
+                <h3>Sara Williams</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">★★★★☆</div>
+            <div class="client-review">
+              <p>
+                Very good experience overall. The quality exceeded my
+                expectations.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="clientDetailed">
+                <h3>Daniel Scott</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">★★★★★</div>
+            <div class="client-review">
+              <p>
+                Elegant design and premium feeling. I would definitely come back
+                again.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="clientDetailed">
+                <h3>Emily Carter</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination product-pagination-2"></div>
+      </div>
+    </section>
+
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+    <footer id="contact" class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#about" class="logo">
+              <img
+                src="/images/Untitled (700 x 280 px).png"
+                width="160"
+                height="50"
+                alt="Footcap logo"
+                width="160"
+                height="50"
+              />
+            </a>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://wa.me/212620133113?text=Hello%20I%20want%20to%20order"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/chocomood2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <p data-i18n="footer_contact" class="footer-list-title">
+                  Contact Us
+                </p>
+              </li>
+
+              <li>
+                <address class="footer-link">
+                  <ion-icon name="location"></ion-icon>
+
+                  <span class="footer-link-text"> Marrakech, Morocco </span>
+                </address>
+              </li>
+
+              <li>
+                <a href="tel:+212650316470" class="footer-link">
+                  <ion-icon name="call"></ion-icon>
+
+                  <span class="footer-link-text"> +212 620-133113 </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:azmah.ham@gmail.com" class="footer-link">
+                  <ion-icon name="mail"></ion-icon>
+
+                  <span class="footer-link-text"> azmah.ham@gmail.com </span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p data-i18n="footer_account" class="footer-list-title">
+                  My Account
+                </p>
+              </li>
+
+              <li>
+                <a href="#home" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#product" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">View Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#blogs" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Blogs</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#review" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Review</span>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">FAQ</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="footer-list">
+              <p data-i18n="footer_opening" class="footer-list-title">
+                Opening Time
+              </p>
+
+              <table class="footer-table">
+                <tbody>
+                  <tr class="table-row">
+                    <td class="table-head" scope="row">Mon - Tue:</td>
+
+                    <td class="table-data">8AM - 10PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-head" scope="row">Wed:</td>
+
+                    <td class="table-data">8AM - 7PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-head" scope="row">Fri:</td>
+
+                    <td class="table-data">7AM - 12PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-head" scope="row">Sat:</td>
+
+                    <td class="table-data">9AM - 8PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-head" scope="row">Sun:</td>
+
+                    <td class="table-data">Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="footer-list">
+              <!-- <p data-i18n="newsletter_title" class="footer-list-title">
+                Newsletter
+              </p> -->
+
+              <!-- <p class="footer-thanks-text">Made with ❤️ & chocolate</p> -->
+
+              <!-- <p class="newsletter-text">
+                Authoritatively morph 24/7 potentialities with error-free
+                partnerships.
+              </p> -->
+
+              <div class="footer-message">
+                <p class="footer-list-title" data-i18n="thanks_title">
+                  Thank you for visiting 🤎
+                </p>
+
+                <p class="footer-thanks-text" data-i18n="thanks_text">
+                  We’re happy to have you here. Follow us on social media for
+                  our latest creations 🍫✨
+                </p>
+                <p class="footer-thanks-text">Made with ❤️ & chocolate</p>
+              </div>
+
+              <!-- <form action="" class="newsletter-form">
+                <input
+                  data-i18n="footer_email_placeholder"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Email Address"
+                  class="newsletter-input"
+                />
+
+                <button
+                  data-i18n="subscribe"
+                  type="submit"
+                  class="btn btn-priamary"
+                >
+                  Subscribe
+                </button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-buttom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2025
+            <a href="#" class="copyright-link">ChocoMood</a> All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--
+         btn Go Top
+        -->
+
+    <a href="#top" class="go-top-btn active" data-btn>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- icon Link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+  </body>
+</html>
