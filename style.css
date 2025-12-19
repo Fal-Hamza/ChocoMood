@@ -358,7 +358,7 @@ html[dir="rtl"] .lang-menu {
     gap: 40px;
     padding: 60px 0;
 
-    background-image: url(images/pexels-isabella-mendes-107313-4655031.jpg);
+    background-image: url(./images/pexels-isabella-mendes-107313-4655031.jpg);
     background-size: cover;
     background-position: center center;
 
@@ -882,7 +882,7 @@ section {
 /* Start Blog*/
 
 .blogs {
-  background: url(images/backGround.png) no-repeat;
+  background: url(./images/backGround.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -929,7 +929,8 @@ section {
 }
 
 .newsletter {
-  background: url(images/pexels-bethany-hicks-368308603-14576525.jpg) no-repeat;
+  background: url(./images/pexels-bethany-hicks-368308603-14576525.jpg)
+    no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -1099,7 +1100,7 @@ ___________________________*/
 
 .footer {
   font-family: var(--ff-josefin-sans);
-  background: url(images/backGround.png) no-repeat;
+  background: url(./images/backGround.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -1279,7 +1280,7 @@ a.footer-link:is(:hover, :focus) {
 .footer {
   position: relative;
   color: #fff;
-  background: url(images/backGround.png) no-repeat center/cover;
+  background: url(./images/backGround.png) no-repeat center/cover;
 }
 
 /* overlay readable */
@@ -1358,7 +1359,7 @@ a.footer-link:is(:hover, :focus) {
 /* ===== Luxy Footer (keep same background) ===== */
 
 .footer {
-  background: url(images/backGround.png) no-repeat center/cover;
+  background: url(./images/backGround.png) no-repeat center/cover;
   color: var(--black);
 }
 
